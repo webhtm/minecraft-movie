@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Minecraft Movie Web</title>
+    <style>
+        /* Use flexbox to center the video and make it responsive */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;  /* Center the video horizontally */
+            align-items: center;      /* Center the video vertically */
+            background-color: #333;   /* Optional: black background for contrast */
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;   /* Make sure video doesn't exceed screen width */
+            max-height: 100%;  /* Make sure video doesn't exceed screen height */
+            object-fit: contain; /* Maintain aspect ratio without cropping */
+        }
+    </style>
+</head>
+<body>
+    <video controls>
+        <source src="https://ia601604.us.archive.org/4/items/a-mc-movie/A%20MC%20Movie.mp4" type="video/mp4">
+        ERROR: YOUR BROWSER DOES NOT SUPPORT VIDEO
+    </video>
+</body>
+</html>
